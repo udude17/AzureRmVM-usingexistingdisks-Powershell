@@ -1,6 +1,7 @@
 #
-# PowerShell Script for creating a VM with a new NIC & VNET using existing OS and data disks. 
-# AzureRM only (v2, not classic)
+# Simple PowerShell example for creating a Linux VM with a new NIC & VNET using existing OS and data disks. 
+# Useful when needed to move the VM to a new VNET
+# AzureRM or ARM-only (not Classic)
 #
 # Requires Azure PowerShell September 2016 or later
 # 
@@ -50,7 +51,7 @@ $StorageRg = ’101-linux-storage’   # OS Disk storage account RG
 $StorageRg2 = ’101-linux-storage’  # Data Disk storage account RG
 
 # DISKS - Name of the OS VHD that resided in the $storageaccount
-$VHDName=’linux1012016829225234'
+$VHDName=’linux101osdisk'
 # DISKS - Name of the Data Disk VHDs
 $DataDisk1Name='linux101-disk01'
 $DataDisk2Name='linux101-disk02'
