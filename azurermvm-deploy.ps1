@@ -33,18 +33,18 @@ $SubnetName=’subnet2’
 
 #New Nic name and Internal IP address that will get created in the VNET we are moving the VM to
 $Nic1Name=’LinuxNIC35’
-$pvip = "10.0.1.135"
+$pvip = '10.0.1.135'
 
 #New Virtual Machine Name
 $VMName=’Linux-35’
 
 #VMSize
-$VMSize=’Standard_DS1'
+$VMSize=’Standard_DS1’
 
 #The storage account that holds the VHD OS disk you are trying to make a new VM from
-$storageaccount=’101storage'
+$storageaccount=’101storage’
 #The storage account that holds the VHD DATA disk(s) you are trying to make a new VM from
-$storageaccount2=’101storage'
+$storageaccount2=’101storage’
 
 # The resource group(s) for $storageaccount(s)
 # OS Disk storage account RG
@@ -53,10 +53,10 @@ $StorageRg = ’101-linux-storage’
 $StorageRg2 = ’101-linux-storage’  
 
 # DISKS - Name of the OS VHD that resided in the $storageaccount
-$VHDName=’linux101osdisk'
+$VHDName=’linux101osdisk’
 # DISKS - Name of the Data Disk VHDs
-$DataDisk1Name='linux101-disk01'
-$DataDisk2Name='linux101-disk02'
+$DataDisk1Name=’linux101-disk01’
+$DataDisk2Name=’linux101-disk02’
 
 ###--------------END INPUT PARAMETER SECTION-------------###
 
@@ -92,4 +92,3 @@ $VM.StorageProfile.DataDisks[1].DiskSizeGB = $null
 New-AzureRmVM -ResourceGroupName $RGvm -Location $location -VM $VM
 
 ###########--------------END----------------###############
-
