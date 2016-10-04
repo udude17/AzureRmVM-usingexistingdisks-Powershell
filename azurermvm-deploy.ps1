@@ -47,8 +47,10 @@ $storageaccount=’101storage'
 $storageaccount2=’101storage'
 
 # The resource group(s) for $storageaccount(s)
-$StorageRg = ’101-linux-storage’   # OS Disk storage account RG
-$StorageRg2 = ’101-linux-storage’  # Data Disk storage account RG
+# OS Disk storage account RG
+$StorageRg = ’101-linux-storage’   
+# Data Disk storage account RG
+$StorageRg2 = ’101-linux-storage’  
 
 # DISKS - Name of the OS VHD that resided in the $storageaccount
 $VHDName=’linux101osdisk'
