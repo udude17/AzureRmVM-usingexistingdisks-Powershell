@@ -41,9 +41,9 @@ $VMName=’Linux-35’
 $VMSize=’Standard_DS1'
 
 #The storage account that holds the VHD OS disk you are trying to make a new VM from
-$storageaccount=’101linuxuwetest985'
+$storageaccount=’101storage'
 #The storage account that holds the VHD DATA disk(s) you are trying to make a new VM from
-$storageaccount2=’101linuxuwetest985'
+$storageaccount2=’101storage'
 
 # The resource group(s) for $storageaccount(s)
 $StorageRg = ’101-linux-storage’   # OS Disk storage account RG
