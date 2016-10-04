@@ -1,9 +1,9 @@
 #
 # Simple PowerShell example for creating a Linux VM with a new NIC & VNET using existing OS and data disks. 
-# Useful when needed to move the VM to a new VNET
-# AzureRM or ARM-only (not Classic)
+# Useful when needed to move the VM to a new VNET.  AzureRM or ARM-only (not Classic)
 #
 # Requires Azure PowerShell September 2016 or later
+# VERSION:  1.0
 # 
 Login-AzureRMAccount 
 $SubID  = "xxxxxyyynnn" #  
